@@ -1,21 +1,30 @@
+
+function iniciar(){
 //var web3 = new Web3 ();
+console.log(typeof web3);
 
 if(typeof web3 !== 'undefined') 
 {
  web3 = new Web3(web3.currentProvider);
- console.log('1');
+ console.log('MM');
  } 
 else 
 {
 web3 = new Web3('https://rinkeby.infura.io/v3/dacbccd3b7da4b59b3568af1d82a8386');
- console.log('Undefined');
+ //console.log('Undefined');
+ console.log('InFURA');
+
 }
 
+web3.eth.net.getNetworkType()
+.then (networkType => console.log('Conectado a Red: ', networkType))
+.catch (err => console.error('error', err));
 
 web3.eth.getBlockNumber()
-	.then (blockNumber => console.log('Conectado a Red Rinkeby!. Número de Bloque: ', blockNumber))
+	.then (blockNumber => console.log('Número de Bloque: ', blockNumber))
     .catch (err => console.error('error', err));
-	
+}
+
 
 function verificar(){
 	var estado='';
