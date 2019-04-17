@@ -93,8 +93,13 @@
 				createAndSaveAccount();
 				location.reload();
 			});
+
+			jQuery('#conseguir').click(function(){   	  
+				alert('Vas a Conseguir muchos HolaMundos');				      //Llamamos la función 'saludo' pasándole la variable que hemos capturado 
+				location.reload();
+			});
 	
-	
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			//FUNCIÓN DE SUMA
 			function operacion(a,b){								//Creamos la función que recoje los dos parámetros
 				var resultado=a+b;									//Sumamos los valores
@@ -106,7 +111,7 @@
 					var num2 = parseInt(jQuery('#valorB').val(),10); //Recogemos el segundo valor en formato número
 					operacion(num1,num2);						   //Llamamos a la función 'operacion' pasándole los dos valores recogidos
 			});
-
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 	

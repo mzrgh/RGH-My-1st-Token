@@ -6,13 +6,13 @@ console.log(typeof web3);
 if(typeof web3 !== 'undefined') 
 {
  web3 = new Web3(web3.currentProvider);
- console.log('MM');
+ console.log('MetaMask');
  } 
 else 
 {
 web3 = new Web3('https://rinkeby.infura.io/v3/dacbccd3b7da4b59b3568af1d82a8386');
  //console.log('Undefined');
- console.log('InFURA');
+ console.log('InFura');
 
 }
 
